@@ -47,10 +47,10 @@ def __main__(exercises_lower, exercises_upper, ab_lower, ab_upper, sets_lower_bo
         choice = r.choice(gv.ab_exercises)
         sets = r.randint(sets_lower_bound, sets_upper_bound)
         reps = r.randint(reps_lower_bound, reps_upper_bound)
-        rolling_string += "Exercise {}: {}\n   {} x {}\n\n".format(num_of_exercises, choice, sets, reps)
+        rolling_string += "Exercise {}: {}\n   {} x {}\n\n".format(num_of_exercises + i, choice, sets, reps)
     print(rolling_string)
 
 
 if __name__ == "__main__":
-    __main__(2, 6, 3, 6, 4, 10)
+    __main__(4, 10, 1, 2, 3, 6, 5, 20)
 
