@@ -62,9 +62,9 @@ def random_exercise(exercise_list):
     superset_proc = r.random()
     dropset_proc = r.random()
 
-    if superset_proc <= 0.50:
+    if superset_proc <= 0.05:
         superset = True
-    if dropset_proc <= 0.5:
+    if dropset_proc <= 0.05:
         dropset = True
     if superset and dropset:
         tiebreaker = r.randint(0, 1)
